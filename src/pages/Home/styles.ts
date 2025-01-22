@@ -8,7 +8,7 @@ export const HomePageWrapper = styled.div`
   justify-content: start;
   align-items: center;
   padding-top: 200px;
-`
+`;
 
 export const InputContainer = styled.div`
   display: flex;
@@ -20,4 +20,4 @@ export const InputContainer = styled.div`
 export const ButtonWrapper = styled.div`
   min-width:146px;
   max-height:48px;
-`
+`;

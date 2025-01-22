@@ -15,6 +15,7 @@ export const TempContainer = styled.div`
   display: flex;
   flex-direction:column;
   align-items: center;
+  flex: 1;
   font-family: Inter, "Helvetica Neue", Helvetica, sans-serif;
   color:white;
 `;
@@ -31,12 +32,29 @@ export const Country = styled.div`
 `;
 
 export const CloudsContainer = styled.div`
-  min-width:290px
+  min-width:290px;
 `;
 
 export const CloudsImage = styled.img`
   width:100%;
 `;
 
+// export const ButtonWrapper = styled.div`
+//   display: flex;
+//   min-width:146px;
+//   max-height:48px;
+//   gap: 20px;
+// `;
 
+// export const InfoWrapper = styled.div`
+//  display: flex;
+//  align-items: center;
+//  gap: 20px;
+// `;
+
+// export const InfoText = styled.div`
+//  font-size: 24px;
+//  font-weight: bold;
+//  color: rebeccapurple;
+// `;
 

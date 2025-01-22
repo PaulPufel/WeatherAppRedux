@@ -17,12 +17,10 @@ export const InputElement = styled.input`
   backdrop-filter: blur(16px);
   border: 1px solid white;
   border-radius: 40px;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
-  font-weight:600;
-    font-size:20px;
+  font-weight:300;
   
-
   &::placeholder {
     color: #ffffff;
     opacity:50%;

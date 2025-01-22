@@ -25,5 +25,5 @@ export const ErrorMessage = styled.div`
   color:white;
 `
 
-/*  <ApiError>API Error</ApiError>
-      <ErrorMessage>Something went wrong with API data</ErrorMessage> */
+// <ApiError>API Error</ApiError>
+//       <ErrorMessage>Something went wrong with API data</ErrorMessage> 
