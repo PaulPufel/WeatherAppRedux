@@ -1,70 +1,49 @@
-//import { useAppDispatch, useAppSelector } from "../../store/hooks";
-//import { weatherInfoSliceActions, weatherInfoSliceSelectors } from "../../store/redux/weatherInfo/weatherInfoSlice";
-import Button from "../Button/Button";
-import Spinner from "../Spinner/Spinner";
-import { WeatherInfoContainer, TempContainer, Temperature, Country, CloudsContainer, CloudsImage } from "./styles";
+import {
+  WeatherInfoContainer,
+  TempContainer,
+  Temperature,
+  Country,
+  CloudsContainer,
+  CloudsImage,
+  ButtonsWrapper,
+  WeatherBlock,
+} from "./styles"
+import Button from "../Button/Button"
+import type { WeatherInfoProps } from "./types"
+import { useAppDispatch } from "../../store/hooks"
+import { weatherSliceActions } from "../../store/redux/weather/weatherSlice"
 
-function WeatherInfo() {
-  function getInfo(): void {
-    throw new Error("Function not implemented.");
+function WeatherInfo({ temp, city, icon, isHistory = true }: WeatherInfoProps) {
+  const dispatch = useAppDispatch()
+  const saveDataInHistory = () => {
+    dispatch(weatherSliceActions.safeDataInHistory())
   }
-
-  function deleteInfos(): void {
-    throw new Error("Function not implemented.");
-  }
-
-
-  // Key
-  // a2c58b5db6ecf9985599f0c1f7afba52
-
-  // const dispatch = useAppDispatch();
-  // const { data, error, status } = useAppSelector(weatherInfoSliceSelectors.infoData)
-
-  // const getInfo = () => {
-  //   dispatch(weatherInfoSliceActions.getInfo())
-  // }
-
-  // const deleteInfos = () => {
-  //   dispatch(weatherInfoSliceActions.deleteAllCards())
-  // }
-
-  // console.log(data);
-
-  // const infos = data.map((info: WeatherInfo) => {
-  // const deleteInfo = () => {
-  //   dispatch (weatherInfoSliceActions.deleteInfo(info.id))
-  // }
-   
-  // return (
-  //   <InfoWrapper key={info.id}>
-  //     <InfoText>{info.info}</InfoText>
-  //     <Button name='x' onClick={deleteInfo} />
-  //   </InfoWrapper>)
-  // })
-
-  // function deleteWeatherData(): void {
-  //   throw new Error("Function not implemented.");
-  // }
-
-  // function deleteWeatherInfo(): void {
-  //   throw new Error("Function not implemented.");
-  // }
-
   return (
-    <WeatherInfoContainer>
-      <TempContainer>
-        <Button name="Save" onClick={getInfo} />
-        {status === 'loading' && <Spinner />} 
-           {'infos'} 
-        <Temperature></Temperature>
-        <Country></Country>     
-        <Button name="Delete" onClick={deleteInfos} />    
-      </TempContainer>                         
-      <CloudsContainer>
-        <CloudsImage src="/src/assets/cloudsExample.png"></CloudsImage>
-      </CloudsContainer>
-    </WeatherInfoContainer>
+    <WeatherBlock>
+      <WeatherInfoContainer>
+        <TempContainer>
+          <Temperature>{temp}°</Temperature>
+          <Country>{city}</Country>
+        </TempContainer>
+        <CloudsContainer>
+          <CloudsImage src={icon}></CloudsImage>
+          <CloudsImage src={icon}></CloudsImage>
+          <CloudsImage src={icon}></CloudsImage>
+        </CloudsContainer>
+      </WeatherInfoContainer>
+      {!isHistory && (
+        <ButtonsWrapper>
+          <Button name="Save" onClick={saveDataInHistory} />
+          <Button name="Delete" />
+        </ButtonsWrapper>
+      )}
+      {isHistory && (
+        <ButtonsWrapper>
+          <Button name="Delete" />
+        </ButtonsWrapper>
+      )}
+    </WeatherBlock>
   )
 }
 
-export default WeatherInfo;
+export default WeatherInfo

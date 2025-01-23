@@ -51,4 +51,3 @@ export const StyledNavLink = styled(NavLink)`
   font-size: 20px;
   color: white;
 `;
-
