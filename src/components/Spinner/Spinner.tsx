@@ -1,10 +1,10 @@
-import {SpinnerEl} from './styles';
+import { MySpinner } from "./styles";
 
 const Spinner = () => (
   <>
-    <SpinnerEl />
+    <MySpinner />
   </>
 );
 
-export default Spinner
+export default Spinner;
 

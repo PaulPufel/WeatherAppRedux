@@ -1,10 +1,9 @@
-import styled from '@emotion/styled';
-
+import styled from '@emotion/styled'
 
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
-  gap:4px;
+  gap: 4px;
   width: 100%;
 `;
 
@@ -19,11 +18,12 @@ export const InputElement = styled.input`
   border-radius: 40px;
   font-size: 20px;
   color: #ffffff;
-  font-weight:300;
+  font-weight: 600;
+  font-size: 20px;
   
   &::placeholder {
     color: #ffffff;
-    opacity:50%;
+    opacity: 50%;
   }
-`;
+`; 
 

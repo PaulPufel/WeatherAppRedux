@@ -1,9 +1,9 @@
 import styled from '@emotion/styled';
 
-export const SpinnerEl = styled.div`
+export const MySpinner = styled.div`
   border: 8px solid #f3f3f3;
   border-top: 8px solid #1f27f5;
-  border-radius: 50%; /* Делаем круг */
+  border-radius: 50%;
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;

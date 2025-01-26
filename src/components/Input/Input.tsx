@@ -1,6 +1,6 @@
-import './styles.js';
-import type { InputProps } from './types.js';
-import { InputContainer, InputElement} from './styles.js';
+import './styles'
+import type { InputProps } from './types'
+import { InputContainer, InputElement} from './styles'
 
 function Input({
   name,
@@ -10,7 +10,6 @@ function Input({
   value,
   onChange,
 }: InputProps) {
-  // console.log("Input render or re-render");
 
   return (
     <InputContainer>
