@@ -1,4 +1,4 @@
-import {SpinnerEl} from './styles';
+import {SpinnerEl} from './styles'
 
 const Spinner = () => (
   <>
@@ -6,5 +6,5 @@ const Spinner = () => (
   </>
 );
 
-export default Spinner
+export default Spinner;
 

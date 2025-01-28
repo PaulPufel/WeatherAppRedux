@@ -1,13 +1,11 @@
 import styled from '@emotion/styled';
 
-
 export const InputContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap:4px;
   width: 100%;
-`;
-
+`
 export const InputElement = styled.input`
   width: 550px;
   height: 50px;
@@ -25,5 +23,5 @@ export const InputElement = styled.input`
     color: #ffffff;
     opacity:50%;
   }
-`;
+`
 

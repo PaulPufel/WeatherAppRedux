@@ -1,5 +1,4 @@
-import type { ChangeEvent } from "react";
-
+import type { ChangeEvent } from "react"
 
 export interface InputProps {
   name: string,
