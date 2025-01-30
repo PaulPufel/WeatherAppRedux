@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Layout from "./pages/Layout/Layout"
 import Home from "./pages/Home/Home"
