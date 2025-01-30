@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from '@emotion/styled'
 
 export const MySpinner = styled.div`
   border: 8px solid #f3f3f3;
@@ -16,4 +16,4 @@ export const MySpinner = styled.div`
       transform: rotate(360deg);
     }
   }
-`;
+`

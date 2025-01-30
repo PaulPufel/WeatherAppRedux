@@ -5,6 +5,7 @@ export const HistoryPageWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD:src/pages/History/styles.ts
   gap: 80px;
   margin: 90px 0 82px 0;
   max-height: 1500px;
@@ -38,4 +39,15 @@ export const WeatherInfo = styled.div`
   font-weight: 900;
   font-size: 35px;
   border-radius: 30px;
+=======
+`;
+
+export const TitleApp = styled.h1`
+  font-weight:500;
+  font-size:57px;
+`;
+
+export const WeatherCard = styled.div`
+
+>>>>>>> main:src/pages/HistoryW/styles.ts
 `
