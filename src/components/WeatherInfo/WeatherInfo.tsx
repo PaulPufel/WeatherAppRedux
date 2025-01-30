@@ -11,12 +11,12 @@ import {
 import Button from "../Button/Button"
 import type { WeatherInfoProps } from "./types"
 import { useAppDispatch } from "../../store/hooks"
-import { weatherSliceActions } from "../../store/redux/weather/weatherSlice"
+// import { weatherSliceActions } from "../../store/redux/weatherW/weatherWSlice"
 
 function WeatherInfo({ temp, city, icon, isHistory = true }: WeatherInfoProps) {
   const dispatch = useAppDispatch()
   const saveDataInHistory = () => {
-    dispatch(weatherSliceActions.safeDataInHistory())
+    // dispatch(weatherSliceActions.safeDataInHistory())
   }
   return (
     <WeatherBlock>
