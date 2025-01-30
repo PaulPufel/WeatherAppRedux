@@ -5,8 +5,8 @@ type ButtonType = 'submit'| 'button' | 'reset'
 export interface ButtonProps{
   name?: string;
   children?: ReactNode;
-  type?:ButtonType;
+  type?: ButtonType;
   onClick?: () => void;
-  disabled?:boolean;
+  disabled?: boolean;
   buttonWidth?: string;
 }

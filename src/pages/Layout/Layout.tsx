@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
 import {
   LayoutWrapper,
   Header,
@@ -6,8 +6,8 @@ import {
   NavContainer,
   StyledNavLink,
   Main,
-} from "./styles"
-import type { LayoutProps } from "./types"
+} from "./styles";
+import type { LayoutProps } from "./types";
 
 function Layout({ children }: LayoutProps) {
   const navigate = useNavigate()

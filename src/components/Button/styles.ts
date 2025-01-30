@@ -2,17 +2,16 @@ import styled from '@emotion/styled';
 
 interface ButtonStyledProps {
   disabled: boolean;
-  buttonWidth?:string;
+  buttonWidth?: string;
 }
 
 export const MainButton = styled.button<ButtonStyledProps>` 
-  width: 100%;
-  height:100%;
+  height: 100%;
   padding: 12px 40px;
   background-color: ${({ disabled }) => (disabled ? '#b8b6ae' : '#3678B4')};
   font-family: Inter, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 20px;
-  line-height:24.2px;
+  line-height: 24.2px;
   line-height: 30px;
   color: #ffffff;
   border: none;
@@ -27,4 +26,4 @@ export const MainButton = styled.button<ButtonStyledProps>`
   &:active{
     background-color: #85a6b5;
   }
-`
+`;

@@ -9,12 +9,13 @@ function Button({
   disabled = false,
   buttonWidth = "100%",
 }: ButtonProps) {
+
   return (
     <MainButton
       buttonWidth={buttonWidth}
       type={type}
       onClick={onClick}
-      disabled={disabled}
+      disabled={disabled} 
     >
       {name}
       {children}

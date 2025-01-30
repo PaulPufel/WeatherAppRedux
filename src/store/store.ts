@@ -14,7 +14,7 @@ export type RootState = ReturnType<typeof rootReducer>
 export const makeStore = (preloadedState?: Partial<RootState>) => {
   const store = configureStore({
     reducer: rootReducer,
-    preloadedState,
+    preloadedState, 
   })
   // configure listeners using the provided defaults
   // optional, but required for `refetchOnFocus`/`refetchOnReconnect` behaviors
