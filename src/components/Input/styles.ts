@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 import styled from '@emotion/styled'
-=======
-import styled from '@emotion/styled';
->>>>>>> main
 
 export const InputContainer = styled.div`
   display: flex;
@@ -28,9 +24,5 @@ export const InputElement = styled.input`
     color: #ffffff;
     opacity: 50%;
   }
-<<<<<<< HEAD
-`; 
-=======
 `
->>>>>>> main
 

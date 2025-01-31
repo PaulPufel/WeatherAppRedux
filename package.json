@@ -21,11 +21,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^6.4.1",
     "@reduxjs/toolkit": "^2.0.1",
-<<<<<<< HEAD
-    "@types/node": "^22.10.10",
-=======
     "@types/node": "^22.10.7",
->>>>>>> main
     "@types/uuid": "^10.0.0",
     "axios": "^1.7.9",
     "formik": "^2.4.6",
